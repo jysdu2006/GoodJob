@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+
+	alert("already");
+
 	$("#logopic").hover(function(){
 		$("#picname").fadeIn("slow");
 	},

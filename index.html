@@ -136,13 +136,22 @@
 
 
 <script>
+
+	$("#logopic").hover(function(){
+		$("#picname").fadeIn("slow");
+	},
+	function(){
+		$("#picname").fadeOut("slow");
+	});
+
+
+
+
 	$('.shCont').click(function(){
 		var page='http://sdumicrohtml.qiniudn.com/'+$(this).data('page')+'.html';
 		alert(page);
 		//$('.content').load('http://sdumicrohtml.qiniudn.com/aboutMe.html');
-		$(.content).load(page,fucntion(response, status, xhr){
-			$(this).css({left:-$this.outerWidth()}).stop().animate({left: 0});
-		});
+		$('.content').load(page);
 	});
 </script>
 
