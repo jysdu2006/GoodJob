@@ -15,7 +15,7 @@ $(document).ready(function(){
 	});
 
 
-	$("#Tip a").click(function(){
+	$(".nav.nav-pills a").click(function(){
 		alert("abc");
 		var page='html/'+$(this).data('page')+'.html';
 		var $content=$('.content');
@@ -30,4 +30,9 @@ $(document).ready(function(){
 		alert("test");
 	});
 
+	$('.shCont').click(function(){alert("abc");});
+
 });
+
+
+$('.shCont').click(function(){alert("abc");});

@@ -120,7 +120,7 @@
 	<div class="navTip">
 		<ul class="nav nav-pills" role="tablist" id="Tip">
 			<li role="presentation" data-page="aboutMe" class="active shCont"><a href="#">我的那些事</a></li>
-			<li role="presentation" class="shCont"><a data-page="myCares">剪不断 理还乱</a></li>
+			<li role="presentation" data-page="myCares" class="shCont"><a href="">剪不断 理还乱</a></li>
 			<li role="presentation" data-page="daNan" class="shCont"><a href="#">那些传说</a></li>
 			<li role="presentation" data-page="jiangHu" class="shCont"><a href="#">你的浆糊</a></li>
 			<li role="presentation" data-page="baGua" class="shCont"><a href="#">扒一扒</a></li>
@@ -135,6 +135,15 @@
 </section>
 
 
-
+<script>
+	$('.shCont').click(function(){
+		var page='http://sdumicrohtml.qiniudn.com/'+$(this).data('page')+'.html';
+		alert(page);
+		//$('.content').load('http://sdumicrohtml.qiniudn.com/aboutMe.html');
+		$(.content).load(page,fucntion(response, status, xhr){
+			$(this).css({left:-$this.outerWidth()}).stop().animate({left: 0});
+		});
+	});
+</script>
 
 <!-- Javascript -->
