@@ -2,6 +2,14 @@
 @import url('http://cdn.gbtags.com/twitter-bootstrap/3.2.0/css/bootstrap-theme.min.css');
 @import url('http://cdn.gbtags.com/font-awesome/4.1.0/css/font-awesome.min.css');
 
+.modal.h4{
+    text-align: center;
+  }
+.modal-footer{
+    margin: auto;
+  }
+
+
 
 .weblog{
 	line-height: 10px;
@@ -18,12 +26,12 @@
 }
 
 .carousel{
-	height: 400px;
+	height: 250px;
 	background-color: #000;
 }
 
 .carousel .item{
-	height: 400px;
+	height: 250px;
 	background-color: #000;
 }
 
@@ -34,7 +42,7 @@
 
 
 .list-group-item{
-	height: 80px;
+	height: 50px;
 }
 
 .relate{

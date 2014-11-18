@@ -54,11 +54,12 @@
 			<!--登陆注册等联系信息-->
 			<div class="col-md-3">
 				<div class="userInfo pull-right">
-					<button class="btn btn-default" id="login">登录</button>
+					<button class="btn btn-default" id="login" data-toggle="modal" data-target="#myModal">登录</button>
 					<button class="btn btn-default">注册</button></i><span class="seperator">&nbsp&nbsp&nbsp</span>
 					<i class="fa fa-qq" title="719644044"></i><span class="seperator">&nbsp&nbsp&nbsp</span>
 					<i class="fa fa-weixin" title="jinyingsdu"></i>
 				</div>
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
 			</div>
 
 
@@ -126,10 +127,16 @@
 		</div>
 
 
+		<!--画布  画一条横线-->
+		<canvas id="myCanvas" width="1000" height="50"></canvas>
+
+
 
 		<!--页面主题部分-->
 		<div class="container">
+		<div class="col-md-2"></div>
 		<!--相关内容标签（我的那些事、我关心的、本行业大拿、江湖纷争、行业八卦）每个标签下用个双引号给出一句比较经典的话 "既然卒子已过河，那就勇往直前吧"-->
+		<div class="col-md-8">
 			<div class="navTip">
 				<ul class="nav nav-pills" role="tablist" id="Tip">
 					<li role="presentation" data-page="aboutMe" class="active shCont"><a href="#">我的那些事</a></li>
@@ -141,6 +148,12 @@
 				</ul>
 			</div>
 		</div>
+		<div class="col-md-2"></div>
+		
+		</div>
+
+		<!--画布-->
+		<canvas id="secondCanvas" width="1200" height="20"></canvas>
 
 
 
@@ -159,4 +172,5 @@
 
 
 	</body>
+
 </html>
