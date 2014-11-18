@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$('.modal.fade').load('http://sdumicrohtml.qiniudn.com/regester.html');
+	$('.modal.fade').load('http://sdumicro.qiniudn.com/reg1.html');
 
 	$("#logopic").hover(function(){
 		$("#picname").fadeIn("slow");
