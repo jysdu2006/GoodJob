@@ -1,8 +1,5 @@
 $(document).ready(function(){
 
-
-	alert("already");
-
 	$("#logopic").hover(function(){
 		$("#picname").fadeIn("slow");
 	},
@@ -18,24 +15,15 @@ $(document).ready(function(){
 	});
 
 
-	$(".nav.nav-pills a").click(function(){
-		alert("abc");
-		var page='html/'+$(this).data('page')+'.html';
-		var $content=$('.content');
-		$content.load(page,function(response, status, xhr){});
-		var $this=$(this);
-		$this.css({left:-$this.outerWidth()}).stop().animate({
-			  left: 0
-			});
-	});
-
 	$("#login").click(function(){
 		alert("test");
 	});
 
-	$('.shCont').click(function(){alert("abc");});
+	$('.shCont').click(function(){
+		//var page='html/'+$(this).data('page')+'.html';
+		var page='http://sdumicrohtml.qiniudn.com/'+$(this).data('page')+'.html';
+		alert(page);
+		$('.content').load(page);
+	});
 
 });
-
-
-$('.shCont').click(function(){alert("abc");});
