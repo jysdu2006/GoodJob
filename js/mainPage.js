@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$('.modal.fade').load('http://sdumicro.qiniudn.com/reg1.html');
+	$('.modal.fade').load('http://sdumicro.qiniudn.com/regester.html');
 
 	$("#logopic").hover(function(){
 		$("#picname").fadeIn("slow");
@@ -37,5 +37,9 @@ $(document).ready(function(){
 	ctx.moveTo(200,10);
 	ctx.lineTo(1100,10);
 	ctx.stroke();
+
+
+
+
 
 });
