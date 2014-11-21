@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type='text/javascript' src="http://cdn.gbtags.com/jquery/1.11.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<button>向页面发送 HTTP POST 请求，并获得返回的结果</button>
+
+</body>
+
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		alert("abc");
+		$.get("127.0.0.1:3000",function(data,status){alert(data);});
+	});
+	
+});
+</script>
+</html>
